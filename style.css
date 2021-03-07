@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(220, 220, 220);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+h1, h2 h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1;
+}
+
+.cv {
+    width: 700px;
+    margin: 0px auto;
+    background-color: #fff;
+    box-shadow: 20px 30px 80px DimGrey;
+}
+
+section.profile {
+    box-shadow: 20px 30px 80px dimgray;
+    background: dodgerblue;
+    width: 700px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 1rem;
+}
+
+section.info {
+    padding: 10px 40px 20px;
+}
+
+section.profile .left {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+section.profile .left h2 {
+    color: floralwhite;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    margin: 0px auto;
+}
+
+section.profile .right h2 {
+    color: floralwhite;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+section.profile .left img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 30px;
+}
+
+section.profile .right ul.contact {
+    list-style-type: none;
+    margin-bottom: 1.6rem;
+}
+
+section.profile .right ul.contact li {
+    color: floralwhite;
+    margin-bottom: .7rem;
+    font-size: 14px;
+}
+
+section.profile .right ul.contact li a {
+    color: floralwhite;
+}
+
+h3 {
+    font-size: 16px;
+    margin-right: 8px;
+    margin-bottom: 10px auto;
+    padding-top: 30px;
+    border-bottom: gray inset;
+    padding-bottom: 0.5px;
+}
+
+.title {
+    padding-top: 8px;
+    margin-right: 8px;
+}
+
+.details {
+    padding-top: 8px;
+}
+
+.univer {
+    padding-top: 8px;
+    margin-right: 8px;
+}
+
+.language {
+    padding-top: 8px;
+    margin-right: 8px;
+}
+
+section .info ul.codex li a {
+    color: black;
+}
+
+section .info ul.codex li {
+    padding-top: 8px;
+    margin-right: 8px;
+}
