@@ -6,6 +6,7 @@ telegram: https://t.me/kostya_prozhenik
 
 Email: djfiers@gmail.com
 
+Discord: Kostya Prozhenik#0146
 
 ## About:
 
