@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <img id="ava" src="./images/avatar.jpg" height="200" width="200" alt="avatar">
+      <h1 id="name-section">Kostya Prozhenik</h1>
+    </header>
+    <main class="main">
+      <section>
+        <h3>Contacts</h3>
+        <hr>
+        <ul class="contacts">
+          <li><b>telegram:</b> <a href="https://t.me/kostya_prozhenik">kostya_prozhenik</a></li>
+          <li><b>Discord:</b> <a href="#">Kostya Prozhenik#0146</a></li>
+          <li><b>Email:</b> <a href="djfiers@gmail.com">djfiers@gmail.com</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>About:</h3>
+        <hr>
+        <p>My goal is to master the profession of a front-end developer. I believe that the proffesion of a programmer is creative. This profession allows you to make the world better a more convenient. I enjoy learning, learning something new and exciting.</p>
+        <h3>Skills::</h3>
+        <hr>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+        </ul>
+      </section>
+      <section>
+        <h3>My code example:</h3>
+        <hr>
+        <pre><code>
+            function highAndLow(numbers){
+                const arr = numbers.split(" ").map(Number).sort((a,b) => b - a)
+                return arr[0] + " " + arr[arr.length - 1]
+              }
+        </code></pre>
+      </section>
+      <section>
+        <h3>Education:</h3>
+        <hr>
+        <ul>
+          <li>Belarusian State University of Food and Chemical Technologies</li>
+          <li>Qualification: Mechanical engineer</li>
+        </ul>
+      </section>
+      <section>
+        <h3>English</h3>
+        <hr>
+        <p>A2 - Pre-Intermediate</p>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer-link" href="https://github.com/prozhenik"><img src="./icons/github.svg" height="30" width="30" alt="github-icon">&emsp;Github</a>
+      <a class="footer-link" href="https://rs.school/js/"><img src="./icons/rs_school_js.svg" height="60" width="60" alt="rs-icon">&emsp;Rolling Scopes School</a>
+      <p>© 2021 Kostya Prozhenik</p>
+    </footer>
+  </body>
+</html>
