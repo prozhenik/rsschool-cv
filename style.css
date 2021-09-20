@@ -23,8 +23,16 @@
     src: local(""), url("./fonts/roboto-v20-latin-900.woff2") format("woff2"), url("./fonts/roboto-v20-latin-900.woff2") format("woff");
 }
 
+:root {
+  --main-gray-color: #ddd;
+}
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -62,7 +70,12 @@ body > header a {
   color: #fff;
   line-height: 40px;
   text-decoration: none;
-  font-size: 21px;
+  font-size: 18px;
+}
+
+body > header nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
@@ -89,7 +102,7 @@ footer nav img {
 }
 
 .content {
-  width: 600px;
+  width: 960px;
   margin: auto;
 }
 
@@ -119,8 +132,24 @@ main header .contacts {
 
 main section h2 {
   padding-bottom: 15px;
-  border-bottom: 2px solid #eee;
   margin-bottom: 20px;
+  position: relative;
+}
+
+main section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--main-gray-color);
+  width: 300px;
+  transition: width 1s;
+}
+
+main section:hover h2::after {
+  width: 100%;
 }
 
 main section {
@@ -132,8 +161,11 @@ main section:last-child {
 }
 
 .avatar {
-  border-radius: 200px;
-  width: 200px;
+  border-radius: 50%;
+  border-width: 4px;
+  border-color: #ddd;
+  border-style: solid;
+  width: 208px;
 }
 
 .experience ul {
@@ -141,7 +173,8 @@ main section:last-child {
   flex-wrap: wrap;
 }
 .experience li {
-  flex-basis: 33%;
+  flex-basis: 50%;
+  padding-right: 20px;
 }
 
 .two-columns {
@@ -157,4 +190,28 @@ code {
   border: 1px solid #f7cb3d;
   display: block;
   padding: 20px;
+}
+
+.burger {
+  display: none;
+}
+
+.projects .item {
+  display: block;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.projects .item a:hover img {
+  opacity: 0.9;
+}
+
+.projects .item ion-icon {
+  margin-bottom: -2px;
+}
+
+h2 ion-icon {
+  font-size: 32px;
+  margin-bottom: -7px;
+  margin-right: 5px;
 }
