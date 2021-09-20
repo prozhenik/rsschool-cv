@@ -1,68 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>CV</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <img id="ava" src="./images/avatar.jpg" height="200" width="200" alt="avatar">
-      <h1 id="name-section">Kostya Prozhenik</h1>
-    </header>
-    <main class="main">
-      <section>
-        <h3>Contacts</h3>
-        <hr>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./responsive.css" />
+</head>
+
+<body>
+  <header>
+    <div class="content">
+      <nav>
+        <a href="https://rs.school/" target="_blank">RSSchool</a>
+      </nav>
+    </div>
+  </header>
+  <main class="content">
+    <header>
+      <figure>
+        <img class="avatar" src="./images/avatar.jpg" alt="avatar" />
+      </figure>
+      <div class="about">
+        <h1>Kostya Prozhenik</h1>
         <ul class="contacts">
-          <li><b>telegram:</b> <a href="https://t.me/kostya_prozhenik">kostya_prozhenik</a></li>
-          <li><b>Discord:</b> <a href="#">Kostya Prozhenik#0146</a></li>
-          <li><b>Email:</b> <a href="djfiers@gmail.com">djfiers@gmail.com</a></li>
+          <li class="location">
+            <ion-icon name="location"></ion-icon>
+            Mogilev, Belarus
+          </li>
+          <li class="telegram">
+            <ion-icon name="call"></ion-icon>
+            <a href="https://t.me/kostya_prozhenik">kostya_prozhenik</a>
+          </li>
+          <li class="email">
+            <ion-icon name="mail"></ion-icon>
+            <a href="mailto:djfiers@gmail.com">djfiers@gmail.com</a>
+          </li>
+          <li class="github">
+            <ion-icon name="logo-github"></ion-icon>
+            <a href="https://github.com/prozhenik">github.com/prozhenik</a>
+          </li>
         </ul>
-      </section>
+      </div>
+    </header>
+    <section>
+      <h2>About:</h2>
+      <p>
+        My goal is to master the profession of a front-end developer.
+      </p>
+      <p>
+        I believe that the proffesion of a programmer is creative.
+        This profession allows you to make the world better a more convenient. I enjoy learning, learning something new and exciting.
+      </p>
+      
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Code examples</h2>
       <section>
-        <h3>About:</h3>
-        <hr>
-        <p>My goal is to master the profession of a front-end developer. I believe that the proffesion of a programmer is creative. This profession allows you to make the world better a more convenient. I enjoy learning, learning something new and exciting.</p>
-        <h3>Skills:</h3>
-        <hr>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Git</li>
-        </ul>
-      </section>
-      <section>
-        <h3>My code example:</h3>
-        <hr>
+        <h3><a href="https://www.codewars.com/kata/554e4a2f232cdd87d9000038" target="_blank">Complementary DNA task</a></h3>
         <pre><code>
-            function highAndLow(numbers){
-                const arr = numbers.split(" ").map(Number).sort((a,b) => b - a)
-                return arr[0] + " " + arr[arr.length - 1]
-              }
+          let pairs = {A:'T',T:'A',C:'G',G:'C'};
+          const DNAStrand = dna => dna.replace(/./g, c => pairs[c]);
         </code></pre>
       </section>
       <section>
-        <h3>Education:</h3>
-        <hr>
-        <ul>
-          <li>Belarusian State University of Food and Chemical Technologies</li>
-          <li>Qualification: Mechanical engineer</li>
-        </ul>
+        <h3><a href="https://www.codewars.com/kata/57f609022f4d534f05000024" target="_blank">Find the stray number task</a></h3>
+        <pre><code>
+          function stray(numbers) {
+            return numbers.find(
+              number => numbers.indexOf(number) === numbers.lastIndexOf(number)
+            )
+          }
+        </code></pre>
       </section>
-      <section>
-        <h3>English</h3>
-        <hr>
-        <p>A2 - Pre-Intermediate</p>
-      </section>
-    </main>
-    <footer class="footer">
-      <a class="footer-link" href="https://github.com/prozhenik"><img src="./icons/github.svg" height="30" width="30" alt="github-icon">&emsp;Github</a>
-      <a class="footer-link" href="https://rs.school/js/"><img src="./icons/rs_school_js.svg" height="60" width="60" alt="rs-icon">&emsp;Rolling Scopes School</a>
-      <p>© 2021 Kostya Prozhenik</p>
-    </footer>
-  </body>
+    </section>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>Belarusian State University of Food and Chemical Technologies</li>
+        <li>Qualification: Mechanical engineer</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Languages</h2>
+      <ul>
+        <li>English: A2</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div class="content">
+      <time datetime="2021">2021</time>
+      <nav>
+        <a href="https://rs.school/js/" target="_blank"><img src="./icons/rs_school_js.svg" alt="rs.school js" /></a>
+        <a href="https://github.com/prozhenik"><img src="./icons/github.svg" alt="github" /></a>
+      </nav>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
