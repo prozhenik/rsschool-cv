@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
   .content {
     width: 100%;
     padding: 0 15px;
@@ -7,10 +7,64 @@
     display: flex;
     flex-direction: column;
   }
+
+  main header h1 {
+    text-align: center;
+    line-height: 36px;
+  }
+
   code {
     overflow-x: scroll;
   }
   main header .contacts {
     text-align: center;
+  }
+
+  .experience li {
+    flex-basis: 100%;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    line-height: 12px;
+  }
+
+  .header .content {
+    min-height: 40px;
+  }
+
+  .header .content {
+    padding: 10px 0;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .header.active .burger ion-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .header .burger ion-icon[name="close-outline"] {
+    display: none;
+  }
+
+  .header.active .burger ion-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .header.active nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .projects img {
+    max-width: 100%;
+    height: auto;
   }
 }
